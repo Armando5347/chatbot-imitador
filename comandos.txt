@@ -6,3 +6,12 @@ venv/Scripts/activate
 
 pip install docanno
 
+# Initialize database.
+doccano init
+# Create a super user.
+doccano createuser --username admin --password pass
+# Start a web server.
+doccano webserver --port 8000
+
+# EN OTRA VENTANA DE TERMINAL: Start the task queue to handle file upload/download.
+doccano task
